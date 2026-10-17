@@ -1,17 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { Button } from 'react-native';
 import { StyleSheet, Text, View, Image} from 'react-native';
-import { Saludo } from './assets/components/Saludo';
+import { Perfil } from './assets/components/Perfil';
+
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Cambios en tiempo real osiosi!</Text>
-      <Button title="Boton que no hace nada"></Button>
-      <Text>---------------------</Text>
-      <Saludo></Saludo>
-      <Saludo/>
-      <StatusBar style="auto" />
-    </View>
+        <View style={styles.container}>  
+        <Perfil nombre="Genaro" materia="Movil" />
+        <Perfil nombre="Jenny" carrera="TIID" />
+        <Perfil nombre="Carlos" cuatrimestre="4" />
+
+        </View>
   );
 }
 
