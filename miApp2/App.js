@@ -1,21 +1,22 @@
-import { StyleSheet, Text, View, Image} from 'react-native';
-import { Perfil } from './assets/components/Perfil';
+import { StyleSheet} from 'react-native';
+import MenuScreen from './screens/MenuScreen';
+
+
+
+
 
 export default function App() {
   return (
-        <View style={styles.container}>  
-        <Perfil nombre="Genaro" materia="Movil" />
-        <Perfil nombre="Jenny" carrera="TIID" />
-        <Perfil nombre="Carlos" cuatrimestre="4" />
 
-        </View>
+<MenuScreen></MenuScreen>
+
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#f2ebeb',
     alignItems: 'center',
     justifyContent: 'center',
   },
