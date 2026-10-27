@@ -20,7 +20,7 @@ export default function MenuScreen() {
         case 'tarjetas': 
             return <Tarjetas/>
 
-        case 'safeScreen':
+        case 'SafeScreen':
             return <SafeScreen/>
         
         case 'Pressable':
@@ -48,7 +48,7 @@ export default function MenuScreen() {
 
             <Text>Menu de Practicas</Text>
             <Button title='Tarjetas' onPress={()=>setScreen ('tarjetas')}></Button>
-            <Button title='SafeAreaView' onPress={()=>setScreen ('safeScreen')}></Button>
+            <Button title='SafeAreaView' onPress={()=>setScreen ('SafeScreen')}></Button>
             <Button title='Pressable' onPress={()=>setScreen ('Pressable')}></Button>
             <Button title='TextInput' onPress={()=>setScreen ('TextInput')}></Button>
             <Button title='Flatlist' onPress={()=>setScreen ('Flatlist')}></Button>
